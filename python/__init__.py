@@ -1,1 +1,3 @@
-import cats.cat as cat
+import _cats
+cat = _cats.cat
+

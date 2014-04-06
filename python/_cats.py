@@ -1,9 +1,11 @@
 import os
 import random
 
-# TODO - python replacement on make.
-# _RESOURCES = "!RESOURCES!"
-_RESOURCES = "../resources/cats"
+from pkg_resources import resource_filename
+
+
+_RESOURCES = resource_filename(__name__, 'resources/cats')
+
 
 class Cat(object):
     """Cat class to read and return a cat.
@@ -29,5 +31,4 @@ class Cat(object):
             return fd.read()
 
 cat = Cat()
-
 
