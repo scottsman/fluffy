@@ -8,6 +8,6 @@ setup(
     author_email='scottsman@gmail.com',
     packages=['fluffy'],
     package_dir={'fluffy': 'python'},
-    package_data={'': ['resources/cats/*.txt']}
+    package_data={'fluffy': ['resources/cats/*.txt']}
 )
 
